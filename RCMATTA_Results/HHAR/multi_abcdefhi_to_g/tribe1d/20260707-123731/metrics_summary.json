@@ -1,0 +1,84 @@
+{
+  "seed": 5,
+  "source_users": [
+    "a",
+    "b",
+    "c",
+    "d",
+    "e",
+    "f",
+    "h",
+    "i"
+  ],
+  "source_tag": "multi_abcdefhi",
+  "target_user": "g",
+  "method": "tribe1d",
+  "model_path": "D:\\大文件夹\\EEG-PLTA-main\\ckpt\\HHAR_AB\\mydfenet3\\Seed5\\multi_abcdefhi_to_g\\20260707-114010\\best.pt",
+  "scaler_path": "D:\\大文件夹\\EEG-PLTA-main\\ckpt\\HHAR_AB\\mydfenet3\\Seed5\\multi_abcdefhi_to_g\\20260707-114010\\scaler_params.joblib",
+  "seq_len": 128,
+  "stride": 64,
+  "accuracy": 0.8742052113202843,
+  "kappa": 0.8481245945994382,
+  "f1": 0.871130737567873,
+  "bacc": 0.8693556167151612,
+  "confusion_matrix": [
+    [
+      1027,
+      0,
+      2,
+      0,
+      2,
+      0
+    ],
+    [
+      0,
+      1457,
+      26,
+      0,
+      0,
+      0
+    ],
+    [
+      5,
+      0,
+      1407,
+      0,
+      0,
+      0
+    ],
+    [
+      3,
+      0,
+      6,
+      1504,
+      143,
+      77
+    ],
+    [
+      33,
+      0,
+      1,
+      55,
+      953,
+      121
+    ],
+    [
+      15,
+      0,
+      1,
+      206,
+      313,
+      664
+    ]
+  ],
+  "num_samples": 8021,
+  "elapsed_seconds": 3.9997031688690186,
+  "label_names": [
+    "bike",
+    "sit",
+    "stand",
+    "walk",
+    "stairsup",
+    "stairsdown"
+  ]
+}

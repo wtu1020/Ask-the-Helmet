@@ -1,0 +1,55 @@
+[26/07/05 21:46:39] [test-all-tta-two2.py:  588]: ==========================================
+gpu_id:0
+worker:4
+num_rep:1
+output:./ckpt
+method:plta
+align:no_align
+seed:5
+test_folder:D:\liujiangtao\sanzhoudatesets2
+scaler_path:scaler_params3.joblib
+model_path:bestyuan.pt
+use_balanced_batch:False
+num_classes:6
+domain:MotorImagery
+dset_root:./data
+model_cfg_root:./cfg
+backbone:eegnet
+max_epoch:100
+smooth:0
+trte:val
+scenario:normal
+snr:5
+noise_channel_ratio:1
+shuffle_channel_ratio:0.3
+maximum_amplitude_scaling:2
+train_session:1
+adapt_session:1
+test_session:1
+use_test_to_adapt:1
+multi_class:1
+device:cuda
+class_num:6
+update_batch_size:60
+shuffle_test_dset:False
+subject_num:1
+sample_rate:20
+model_config:{'lr': 0.001, 'epsilon': 0.01, 'lambda_pi': 1, 'reverse_kl': True, 'conf_threshold': 0.7, 'temperature_scaling': 2, 'memory_size': 20}
+output_dir:IMU_TTA_Results 小数据集批次为60/plta/20260705-214639
+
+[26/07/05 21:46:39] [test-all-tta-two2.py:  354]: Loaded DFENet weights: bestyuan.pt
+[26/07/05 21:46:39] [test-all-tta-two2.py:  369]: Setting up test-time adaptation method: plta
+[26/07/05 21:46:39] [test-all-tta-two2.py:  430]: Using deterministic class-block stream: 120 samples/run, 60 samples/batch, shuffle=False, no balanced sampler.
+[26/07/05 21:48:22] [test-all-tta-two2.py:  451]: accuracy [T0][#samples=17880]: 87.11%
+[26/07/05 21:48:22] [test-all-tta-two2.py:  631]: 
+============================================================
+[26/07/05 21:48:22] [test-all-tta-two2.py:  633]: Final result
+[26/07/05 21:48:22] [test-all-tta-two2.py:  634]: ============================================================
+[26/07/05 21:48:22] [test-all-tta-two2.py:  635]: Method: PLTA
+[26/07/05 21:48:22] [test-all-tta-two2.py:  636]: Accuracy: 87.11%
+[26/07/05 21:48:22] [test-all-tta-two2.py:  637]: Kappa: 0.8453
+[26/07/05 21:48:22] [test-all-tta-two2.py:  638]: F1: 0.8709
+[26/07/05 21:48:22] [test-all-tta-two2.py:  639]: BACC: 0.8711
+[26/07/05 21:48:22] [test-all-tta-two2.py:  649]: Total time: 103.63s
+[26/07/05 21:48:22] [test-all-tta-two2.py:  650]: ============================================================
+[26/07/05 21:48:22] [test-all-tta-two2.py:  666]: Results saved to: IMU_TTA_Results 小数据集批次为60/plta/20260705-214639

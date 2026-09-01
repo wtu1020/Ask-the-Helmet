@@ -1,0 +1,55 @@
+[26/07/05 23:02:22] [test-all-tta-two3.py:  588]: ==========================================
+gpu_id:0
+worker:4
+num_rep:1
+output:./ckpt
+method:tent
+align:no_align
+seed:5
+test_folder:D:\liujiangtao\sanzhoudatesets
+scaler_path:scaler_paramsdierci.joblib
+model_path:bestdierci.pt
+use_balanced_batch:False
+num_classes:6
+domain:MotorImagery
+dset_root:./data
+model_cfg_root:./cfg
+backbone:eegnet
+max_epoch:100
+smooth:0
+trte:val
+scenario:normal
+snr:5
+noise_channel_ratio:1
+shuffle_channel_ratio:0.3
+maximum_amplitude_scaling:2
+train_session:1
+adapt_session:1
+test_session:1
+use_test_to_adapt:1
+multi_class:1
+device:cuda
+class_num:6
+update_batch_size:150
+shuffle_test_dset:False
+subject_num:1
+sample_rate:20
+model_config:{'lr': 0.001, 'steps': 1, 'episodic': False}
+output_dir:IMU_TTA_Results 大数据集批次为150//tent/20260705-230222
+
+[26/07/05 23:02:22] [test-all-tta-two3.py:  354]: Loaded DFENet weights: bestdierci.pt
+[26/07/05 23:02:22] [test-all-tta-two3.py:  369]: Setting up test-time adaptation method: tent
+[26/07/05 23:02:22] [test-all-tta-two3.py:  430]: Using deterministic class-block stream: 120 samples/run, 150 samples/batch, shuffle=False, no balanced sampler.
+[26/07/05 23:02:38] [test-all-tta-two3.py:  451]: accuracy [T0][#samples=30000]: 89.40%
+[26/07/05 23:02:38] [test-all-tta-two3.py:  631]: 
+============================================================
+[26/07/05 23:02:38] [test-all-tta-two3.py:  633]: Final result
+[26/07/05 23:02:38] [test-all-tta-two3.py:  634]: ============================================================
+[26/07/05 23:02:38] [test-all-tta-two3.py:  635]: Method: TENT
+[26/07/05 23:02:38] [test-all-tta-two3.py:  636]: Accuracy: 89.40%
+[26/07/05 23:02:38] [test-all-tta-two3.py:  637]: Kappa: 0.8728
+[26/07/05 23:02:38] [test-all-tta-two3.py:  638]: F1: 0.8943
+[26/07/05 23:02:38] [test-all-tta-two3.py:  639]: BACC: 0.8940
+[26/07/05 23:02:38] [test-all-tta-two3.py:  649]: Total time: 15.86s
+[26/07/05 23:02:38] [test-all-tta-two3.py:  650]: ============================================================
+[26/07/05 23:02:38] [test-all-tta-two3.py:  666]: Results saved to: IMU_TTA_Results 大数据集批次为150//tent/20260705-230222

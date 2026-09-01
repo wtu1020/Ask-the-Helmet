@@ -1,0 +1,52 @@
+[26/07/08 09:51:18] [训练test-all-tta-two-pamap2.py:  517]: ==========================================
+gpu_id:0
+worker:0
+seed:5
+source_subject:None
+source_subjects:['101', '102', '103', '104', '105', '106', '107']
+target_subject:108
+seq_len:256
+stride:128
+method:tribe1d
+align:no_align
+update_batch_size:150
+samples_per_class_per_run:20
+stream_mode:sequential
+data_root:C:\Users\czh\Downloads\pamap2+physical+activity+monitoring\PAMAP2_Dataset\PAMAP2_Dataset
+cache_root:D:\大文件夹\EEG-PLTA-main\data\pamap2_cache
+model_path:D:\大文件夹\EEG-PLTA-main\ckpt\PAMAP2_LOSO\mydfenet3\Seed5\multi_101102103104105106107_to_108\20260708-093207\best.pt
+scaler_path:D:\大文件夹\EEG-PLTA-main\ckpt\PAMAP2_LOSO\mydfenet3\Seed5\multi_101102103104105106107_to_108\20260708-093207\scaler_params.joblib
+output_root:D:\大文件夹\EEG-PLTA-main\test-time-evaluation\PAMAP2_LOSO_sequential_all16
+domain:MotorImagery
+dset_root:./data
+model_cfg_root:./cfg
+backbone:eegnet
+max_epoch:100
+smooth:0
+output:./ckpt
+trte:val
+scenario:normal
+snr:5
+noise_channel_ratio:1
+shuffle_channel_ratio:0.3
+maximum_amplitude_scaling:2
+train_session:1
+adapt_session:1
+test_session:1
+use_test_to_adapt:1
+multi_class:1
+source_tag:multi_101102103104105106107
+device:cuda
+dset:PAMAP2_LOSO
+class_num:8
+shuffle_test_dset:False
+subject_num:1
+sample_rate:100
+model_config:{'lr': 0.001, 'steps': 1, 'episodic': False, 'num_augmentations': 1, 'temperature': 1.0, 'ema_momentum': 0.05, 'h0': 0.05, 'lambda_reg': 0.2, 'bn_momentum': 0.08, 'bn_gamma': 0.2, 'augment_noise_std': 0.003, 'augment_scale_std': 0.03, 'augment_shift_ratio': 0.05, 'augment_dropout_prob': 0.0, 'augmentation_clip_min': None, 'augmentation_clip_max': None}
+output_dir:D:\大文件夹\EEG-PLTA-main\test-time-evaluation\PAMAP2_LOSO_sequential_all16\Seed5\multi_101102103104105106107_to_108\sequential\spc20_bs150\tribe1d\20260708-095118
+
+[26/07/08 09:51:18] [训练test-all-tta-two-pamap2.py:  360]: Loaded DFENet weights from D:\大文件夹\EEG-PLTA-main\ckpt\PAMAP2_LOSO\mydfenet3\Seed5\multi_101102103104105106107_to_108\20260708-093207\best.pt
+[26/07/08 09:51:18] [训练test-all-tta-two-pamap2.py:  260]: Target stream | mode=sequential | samples=980 | batch_size=150 | class_counts={'lying': 181, 'sitting': 168, 'standing': 157, 'walking': 8, 'ascending_stairs': 82, 'descending_stairs': 69, 'vacuum_cleaning': 129, 'ironing': 186}
+[26/07/08 09:51:18] [训练test-all-tta-two-pamap2.py:  369]: Setting up method: tribe1d
+[26/07/08 09:51:19] [训练test-all-tta-two-pamap2.py:  419]: Held-out target accuracy: 53.57%
+[26/07/08 09:51:19] [训练test-all-tta-two-pamap2.py:  548]: Saved TTA results under D:\大文件夹\EEG-PLTA-main\test-time-evaluation\PAMAP2_LOSO_sequential_all16\Seed5\multi_101102103104105106107_to_108\sequential\spc20_bs150\tribe1d\20260708-095118

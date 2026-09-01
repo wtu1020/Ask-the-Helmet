@@ -1,0 +1,55 @@
+[26/07/05 22:06:51] [test-all-tta-two2.py:  588]: ==========================================
+gpu_id:0
+worker:4
+num_rep:1
+output:./ckpt
+method:tipi
+align:no_align
+seed:5
+test_folder:D:\liujiangtao\sanzhoudatesets2
+scaler_path:scaler_params3.joblib
+model_path:bestyuan.pt
+use_balanced_batch:False
+num_classes:6
+domain:MotorImagery
+dset_root:./data
+model_cfg_root:./cfg
+backbone:eegnet
+max_epoch:100
+smooth:0
+trte:val
+scenario:normal
+snr:5
+noise_channel_ratio:1
+shuffle_channel_ratio:0.3
+maximum_amplitude_scaling:2
+train_session:1
+adapt_session:1
+test_session:1
+use_test_to_adapt:1
+multi_class:1
+device:cuda
+class_num:6
+update_batch_size:90
+shuffle_test_dset:False
+subject_num:1
+sample_rate:20
+model_config:{'lr': 0.001, 'epsilon': 0.01, 'tent_coeff': 1, 'reverse_kl': True, 'random_init_adv': False}
+output_dir:IMU_TTA_Results 小数据集批次为90/tipi/20260705-220651
+
+[26/07/05 22:06:51] [test-all-tta-two2.py:  354]: Loaded DFENet weights: bestyuan.pt
+[26/07/05 22:06:51] [test-all-tta-two2.py:  369]: Setting up test-time adaptation method: tipi
+[26/07/05 22:06:51] [test-all-tta-two2.py:  430]: Using deterministic class-block stream: 120 samples/run, 90 samples/batch, shuffle=False, no balanced sampler.
+[26/07/05 22:07:09] [test-all-tta-two2.py:  451]: accuracy [T0][#samples=17880]: 88.82%
+[26/07/05 22:07:09] [test-all-tta-two2.py:  631]: 
+============================================================
+[26/07/05 22:07:09] [test-all-tta-two2.py:  633]: Final result
+[26/07/05 22:07:09] [test-all-tta-two2.py:  634]: ============================================================
+[26/07/05 22:07:09] [test-all-tta-two2.py:  635]: Method: TIPI
+[26/07/05 22:07:09] [test-all-tta-two2.py:  636]: Accuracy: 88.82%
+[26/07/05 22:07:09] [test-all-tta-two2.py:  637]: Kappa: 0.8658
+[26/07/05 22:07:09] [test-all-tta-two2.py:  638]: F1: 0.8856
+[26/07/05 22:07:09] [test-all-tta-two2.py:  639]: BACC: 0.8882
+[26/07/05 22:07:09] [test-all-tta-two2.py:  649]: Total time: 18.28s
+[26/07/05 22:07:09] [test-all-tta-two2.py:  650]: ============================================================
+[26/07/05 22:07:09] [test-all-tta-two2.py:  666]: Results saved to: IMU_TTA_Results 小数据集批次为90/tipi/20260705-220651

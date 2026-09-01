@@ -1,0 +1,60 @@
+{
+  "csv_path": "C:\\Users\\czh\\Downloads\\heterogeneity+activity+recognition\\Activity recognition exp\\Activity recognition exp\\Phones_accel_gyro_merged_no_null.csv",
+  "source_user": null,
+  "source_users": [
+    "a",
+    "b",
+    "c",
+    "d",
+    "e",
+    "g",
+    "h",
+    "i"
+  ],
+  "target_user": "f",
+  "seq_len": 128,
+  "stride": 64,
+  "seed": 5,
+  "gpu_id": "0",
+  "epochs": 100,
+  "patience": 25,
+  "batch_size": 128,
+  "lr": 0.001,
+  "weight_decay": 1e-05,
+  "valid_ratio": 0.2,
+  "cache_root": "D:\\大文件夹\\EEG-PLTA-main\\data\\hhar_phone_cache",
+  "output_root": "D:\\大文件夹\\EEG-PLTA-main\\ckpt\\HHAR_AB\\mydfenet3",
+  "source_tag": "multi_abcdeghi",
+  "device": "cuda",
+  "source_shape": [
+    64198,
+    128,
+    6
+  ],
+  "train_shape": [
+    51358,
+    128,
+    6
+  ],
+  "valid_shape": [
+    12840,
+    128,
+    6
+  ],
+  "target_shape": [
+    6232,
+    128,
+    6
+  ],
+  "model": "mydfenet3.DFENet",
+  "num_classes": 6,
+  "num_features": 6,
+  "label_names": [
+    "bike",
+    "sit",
+    "stand",
+    "walk",
+    "stairsup",
+    "stairsdown"
+  ]
+}

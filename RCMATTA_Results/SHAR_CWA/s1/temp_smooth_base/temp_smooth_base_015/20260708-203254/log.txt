@@ -1,0 +1,55 @@
+[26/07/08 20:32:54] [test-all-tta-two3.py:  588]: ==========================================
+gpu_id:0
+worker:4
+num_rep:1
+output:./ckpt
+method:pltamy+参数讨论+temp_smooth_base_015
+align:no_align
+seed:5
+test_folder:D:\liujiangtao\sanzhoudatesets
+scaler_path:scaler_paramsdierci.joblib
+model_path:bestdierci.pt
+use_balanced_batch:False
+num_classes:6
+domain:MotorImagery
+dset_root:./data
+model_cfg_root:./cfg
+backbone:eegnet
+max_epoch:100
+smooth:0
+trte:val
+scenario:normal
+snr:5
+noise_channel_ratio:1
+shuffle_channel_ratio:0.3
+maximum_amplitude_scaling:2
+train_session:1
+adapt_session:1
+test_session:1
+use_test_to_adapt:1
+multi_class:1
+device:cuda
+class_num:6
+update_batch_size:60
+shuffle_test_dset:False
+subject_num:1
+sample_rate:20
+model_config:{'lr': 0.001, 'temperature_scaling': 2.0, 'memory_mode': 'enhanced', 'temporal_ema_momentum': 0.9, 'temporal_mix_min': 0.2, 'temporal_mix_max': 0.8, 'distance_threshold': 0.6, 'conf_threshold': 0.78, 'adaptive_threshold_gamma': 0.2, 'min_adaptive_threshold': 0.65, 'pseudo_conf_gate': True, 'pseudo_max_mix': 0.55, 'proto_temperature': 0.32, 'lambda_proto_align': 0.65, 'dynamic_align_scale': True, 'memory_size': 100, 'min_samples_per_class': 5, 'use_ema_proto': True, 'temp_smooth_base': 0.15, 'smooth_uncertainty_bonus': 0.2, 'feature_guided_smooth': True, 'enable_temporal_dist_smooth': True, 'enable_plain_entmin': False, 'enable_memory': True, 'enable_protoalign': True, 'base_bn_momentum': 0.1, 'bn_gamma': 2.0, 'enable_cb_replay': True, 'lambda_replay': 0.7, 'batch_diversity_threshold': 2.5}
+output_dir:IMU_TTA_Results 大数据集批次为150//pltamy+参数讨论+temp_smooth_base_015/20260708-203254
+
+[26/07/08 20:32:54] [test-all-tta-two3.py:  354]: Loaded DFENet weights: bestdierci.pt
+[26/07/08 20:32:55] [test-all-tta-two3.py:  369]: Setting up test-time adaptation method: pltamy+参数讨论+temp_smooth_base_015
+[26/07/08 20:32:55] [test-all-tta-two3.py:  430]: Using deterministic class-block stream: 120 samples/run, 60 samples/batch, shuffle=False, no balanced sampler.
+[26/07/08 20:36:25] [test-all-tta-two3.py:  451]: accuracy [T0][#samples=30000]: 89.85%
+[26/07/08 20:36:25] [test-all-tta-two3.py:  631]: 
+============================================================
+[26/07/08 20:36:25] [test-all-tta-two3.py:  633]: Final result
+[26/07/08 20:36:25] [test-all-tta-two3.py:  634]: ============================================================
+[26/07/08 20:36:25] [test-all-tta-two3.py:  635]: Method: PLTAMY+参数讨论+TEMP_SMOOTH_BASE_015
+[26/07/08 20:36:25] [test-all-tta-two3.py:  636]: Accuracy: 89.85%
+[26/07/08 20:36:25] [test-all-tta-two3.py:  637]: Kappa: 0.8782
+[26/07/08 20:36:25] [test-all-tta-two3.py:  638]: F1: 0.8993
+[26/07/08 20:36:25] [test-all-tta-two3.py:  639]: BACC: 0.8985
+[26/07/08 20:36:25] [test-all-tta-two3.py:  649]: Total time: 211.36s
+[26/07/08 20:36:25] [test-all-tta-two3.py:  650]: ============================================================
+[26/07/08 20:36:25] [test-all-tta-two3.py:  666]: Results saved to: IMU_TTA_Results 大数据集批次为150//pltamy+参数讨论+temp_smooth_base_015/20260708-203254

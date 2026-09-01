@@ -1,0 +1,81 @@
+{
+  "data_root": "C:\\Users\\czh\\Downloads\\pamap2+physical+activity+monitoring\\PAMAP2_Dataset\\PAMAP2_Dataset",
+  "source_subject": null,
+  "source_subjects": [
+    "101",
+    "103",
+    "104",
+    "105",
+    "106",
+    "107",
+    "108"
+  ],
+  "target_subject": "102",
+  "seq_len": 256,
+  "stride": 128,
+  "seed": 5,
+  "gpu_id": "0",
+  "epochs": 100,
+  "patience": 25,
+  "batch_size": 128,
+  "lr": 0.001,
+  "weight_decay": 1e-05,
+  "valid_ratio": 0.2,
+  "cache_root": "D:\\大文件夹\\EEG-PLTA-main\\data\\pamap2_cache",
+  "output_root": "D:\\大文件夹\\EEG-PLTA-main\\ckpt\\PAMAP2_LOSO\\mydfenet3",
+  "source_tag": "multi_101103104105106107108",
+  "device": "cuda",
+  "source_shape": [
+    7037,
+    256,
+    18
+  ],
+  "train_shape": [
+    5629,
+    256,
+    18
+  ],
+  "valid_shape": [
+    1408,
+    256,
+    18
+  ],
+  "target_shape": [
+    1005,
+    256,
+    18
+  ],
+  "model": "mydfenet3.DFENet",
+  "num_classes": 8,
+  "num_features": 18,
+  "label_names": [
+    "lying",
+    "sitting",
+    "standing",
+    "walking",
+    "ascending_stairs",
+    "descending_stairs",
+    "vacuum_cleaning",
+    "ironing"
+  ],
+  "selected_cols": [
+    4,
+    5,
+    6,
+    10,
+    11,
+    12,
+    21,
+    22,
+    23,
+    27,
+    28,
+    29,
+    38,
+    39,
+    40,
+    44,
+    45,
+    46
+  ]
+}

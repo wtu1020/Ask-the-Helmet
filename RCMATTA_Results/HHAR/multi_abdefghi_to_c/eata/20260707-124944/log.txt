@@ -1,0 +1,50 @@
+[26/07/07 12:49:44] [训练test-all-tta-two-hhar-ab.py:  391]: ==========================================
+gpu_id:0
+worker:0
+seed:5
+source_user:None
+source_users:['a', 'b', 'd', 'e', 'f', 'g', 'h', 'i']
+target_user:c
+seq_len:128
+stride:64
+method:eata
+align:no_align
+update_batch_size:400
+csv_path:C:\Users\czh\Downloads\heterogeneity+activity+recognition\Activity recognition exp\Activity recognition exp\Phones_accel_gyro_merged_no_null.csv
+cache_root:D:\大文件夹\EEG-PLTA-main\data\hhar_phone_cache
+model_path:D:\大文件夹\EEG-PLTA-main\ckpt\HHAR_AB\mydfenet3\Seed5\multi_abdefghi_to_c\20260707-105328\best.pt
+scaler_path:D:\大文件夹\EEG-PLTA-main\ckpt\HHAR_AB\mydfenet3\Seed5\multi_abdefghi_to_c\20260707-105328\scaler_params.joblib
+output_root:D:\大文件夹\EEG-PLTA-main\test-time-evaluation\HHAR_AB_batch400_compare
+domain:MotorImagery
+dset_root:./data
+model_cfg_root:./cfg
+backbone:eegnet
+max_epoch:100
+smooth:0
+output:./ckpt
+trte:val
+scenario:normal
+snr:5
+noise_channel_ratio:1
+shuffle_channel_ratio:0.3
+maximum_amplitude_scaling:2
+train_session:1
+adapt_session:1
+test_session:1
+use_test_to_adapt:1
+multi_class:1
+source_tag:multi_abdefghi
+device:cuda
+dset:HHAR_AB
+class_num:6
+shuffle_test_dset:False
+subject_num:1
+sample_rate:100
+model_config:{'lr': 0.001, 'steps': 1, 'episodic': False, 'fisher_alpha': 1, 'd_margin': 0.2, 'alpha': 0.5}
+output_dir:D:\大文件夹\EEG-PLTA-main\test-time-evaluation\HHAR_AB_batch400_compare\Seed5\multi_abdefghi_to_c\eata\20260707-124944
+
+[26/07/07 12:49:45] [训练test-all-tta-two-hhar-ab.py:  235]: Loaded DFENet weights from D:\大文件夹\EEG-PLTA-main\ckpt\HHAR_AB\mydfenet3\Seed5\multi_abdefghi_to_c\20260707-105328\best.pt
+[26/07/07 12:49:45] [训练test-all-tta-two-hhar-ab.py:  244]: Setting up method: eata
+[26/07/07 12:49:45] [训练test-all-tta-two-hhar-ab.py:  280]: Sequential HHAR target stream | source_users=['a', 'b', 'd', 'e', 'f', 'g', 'h', 'i'] target_user=c samples=7283 batch_size=400 shuffle=False class_counts={'bike': 919, 'sit': 1374, 'stand': 1070, 'walk': 1550, 'stairsup': 1309, 'stairsdown': 1061}
+[26/07/07 12:49:48] [训练test-all-tta-two-hhar-ab.py:  302]: Held-out target accuracy: 42.65%
+[26/07/07 12:49:48] [训练test-all-tta-two-hhar-ab.py:  419]: Saved TTA results under D:\大文件夹\EEG-PLTA-main\test-time-evaluation\HHAR_AB_batch400_compare\Seed5\multi_abdefghi_to_c\eata\20260707-124944

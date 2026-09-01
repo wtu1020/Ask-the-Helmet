@@ -1,0 +1,52 @@
+[26/07/08 09:44:32] [训练test-all-tta-two-pamap2.py:  517]: ==========================================
+gpu_id:0
+worker:0
+seed:5
+source_subject:None
+source_subjects:['101', '102', '104', '105', '106', '107', '108']
+target_subject:103
+seq_len:256
+stride:128
+method:pltamy
+align:no_align
+update_batch_size:150
+samples_per_class_per_run:20
+stream_mode:sequential
+data_root:C:\Users\czh\Downloads\pamap2+physical+activity+monitoring\PAMAP2_Dataset\PAMAP2_Dataset
+cache_root:D:\大文件夹\EEG-PLTA-main\data\pamap2_cache
+model_path:D:\大文件夹\EEG-PLTA-main\ckpt\PAMAP2_LOSO\mydfenet3\Seed5\multi_101102104105106107108_to_103\20260708-092027\best.pt
+scaler_path:D:\大文件夹\EEG-PLTA-main\ckpt\PAMAP2_LOSO\mydfenet3\Seed5\multi_101102104105106107108_to_103\20260708-092027\scaler_params.joblib
+output_root:D:\大文件夹\EEG-PLTA-main\test-time-evaluation\PAMAP2_LOSO_sequential_all16
+domain:MotorImagery
+dset_root:./data
+model_cfg_root:./cfg
+backbone:eegnet
+max_epoch:100
+smooth:0
+output:./ckpt
+trte:val
+scenario:normal
+snr:5
+noise_channel_ratio:1
+shuffle_channel_ratio:0.3
+maximum_amplitude_scaling:2
+train_session:1
+adapt_session:1
+test_session:1
+use_test_to_adapt:1
+multi_class:1
+source_tag:multi_101102104105106107108
+device:cuda
+dset:PAMAP2_LOSO
+class_num:8
+shuffle_test_dset:False
+subject_num:1
+sample_rate:100
+model_config:{'lr': 0.001, 'epsilon': 0.01, 'lambda_pi': 1, 'reverse_kl': True, 'conf_threshold': 0.7, 'temperature_scaling': 2, 'memory_size': 60}
+output_dir:D:\大文件夹\EEG-PLTA-main\test-time-evaluation\PAMAP2_LOSO_sequential_all16\Seed5\multi_101102104105106107108_to_103\sequential\spc20_bs150\pltamy\20260708-094432
+
+[26/07/08 09:44:32] [训练test-all-tta-two-pamap2.py:  360]: Loaded DFENet weights from D:\大文件夹\EEG-PLTA-main\ckpt\PAMAP2_LOSO\mydfenet3\Seed5\multi_101102104105106107108_to_103\20260708-092027\best.pt
+[26/07/08 09:44:33] [训练test-all-tta-two-pamap2.py:  260]: Target stream | mode=sequential | samples=1025 | batch_size=150 | class_counts={'lying': 167, 'sitting': 214, 'standing': 116, 'walking': 45, 'ascending_stairs': 74, 'descending_stairs': 108, 'vacuum_cleaning': 123, 'ironing': 178}
+[26/07/08 09:44:33] [训练test-all-tta-two-pamap2.py:  369]: Setting up method: pltamy
+[26/07/08 09:44:39] [训练test-all-tta-two-pamap2.py:  419]: Held-out target accuracy: 80.10%
+[26/07/08 09:44:39] [训练test-all-tta-two-pamap2.py:  548]: Saved TTA results under D:\大文件夹\EEG-PLTA-main\test-time-evaluation\PAMAP2_LOSO_sequential_all16\Seed5\multi_101102104105106107108_to_103\sequential\spc20_bs150\pltamy\20260708-094432

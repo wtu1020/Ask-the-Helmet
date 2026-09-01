@@ -1,0 +1,120 @@
+{
+  "seed": 5,
+  "source_subjects": [
+    "101",
+    "102",
+    "103",
+    "104",
+    "105",
+    "107",
+    "108"
+  ],
+  "source_tag": "multi_101102103104105107108",
+  "target_subject": "106",
+  "method": "tent",
+  "model_path": "D:\\大文件夹\\EEG-PLTA-main\\ckpt\\PAMAP2_LOSO\\mydfenet3\\Seed5\\multi_101102103104105107108_to_106\\20260708-092754\\best.pt",
+  "scaler_path": "D:\\大文件夹\\EEG-PLTA-main\\ckpt\\PAMAP2_LOSO\\mydfenet3\\Seed5\\multi_101102103104105107108_to_106\\20260708-092754\\scaler_params.joblib",
+  "seq_len": 256,
+  "stride": 128,
+  "stream_mode": "sequential",
+  "samples_per_class_per_run": 20,
+  "update_batch_size": 150,
+  "accuracy": 0.5962671905697446,
+  "kappa": 0.5343849043837471,
+  "f1": 0.5945841991709221,
+  "bacc": 0.6456494863818536,
+  "confusion_matrix": [
+    [
+      118,
+      0,
+      21,
+      0,
+      0,
+      0,
+      32,
+      3
+    ],
+    [
+      7,
+      98,
+      25,
+      0,
+      0,
+      6,
+      5,
+      19
+    ],
+    [
+      3,
+      22,
+      49,
+      0,
+      16,
+      2,
+      18,
+      9
+    ],
+    [
+      0,
+      0,
+      2,
+      41,
+      9,
+      4,
+      0,
+      0
+    ],
+    [
+      3,
+      1,
+      7,
+      0,
+      68,
+      2,
+      11,
+      0
+    ],
+    [
+      2,
+      2,
+      0,
+      0,
+      2,
+      60,
+      2,
+      4
+    ],
+    [
+      1,
+      2,
+      2,
+      2,
+      2,
+      9,
+      103,
+      1
+    ],
+    [
+      6,
+      31,
+      44,
+      0,
+      1,
+      0,
+      71,
+      70
+    ]
+  ],
+  "num_samples": 1018,
+  "elapsed_seconds": 1.907999038696289,
+  "label_names": [
+    "lying",
+    "sitting",
+    "standing",
+    "walking",
+    "ascending_stairs",
+    "descending_stairs",
+    "vacuum_cleaning",
+    "ironing"
+  ]
+}

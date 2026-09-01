@@ -1,0 +1,72 @@
+2026-07-08 09:30:38,038 | INFO | Starting PAMAP2 leave-one-subject-out training run
+2026-07-08 09:30:38,038 | INFO | Seed=5 | Device=cuda | SourceSubjects=['101', '102', '103', '104', '105', '106', '108'] | TargetSubject=107 | seq_len=256 | stride=128 | features=18(acc16g+gyro on hand/chest/ankle)
+2026-07-08 09:30:38,087 | INFO | Loaded cache for subject 101 from D:\大文件夹\EEG-PLTA-main\data\pamap2_cache\pamap2_subject_101_len256_stride128_8class_18ch.npz | windows=1018
+2026-07-08 09:30:38,134 | INFO | Loaded cache for subject 102 from D:\大文件夹\EEG-PLTA-main\data\pamap2_cache\pamap2_subject_102_len256_stride128_8class_18ch.npz | windows=1005
+2026-07-08 09:30:38,182 | INFO | Loaded cache for subject 103 from D:\大文件夹\EEG-PLTA-main\data\pamap2_cache\pamap2_subject_103_len256_stride128_8class_18ch.npz | windows=1025
+2026-07-08 09:30:38,232 | INFO | Loaded cache for subject 104 from D:\大文件夹\EEG-PLTA-main\data\pamap2_cache\pamap2_subject_104_len256_stride128_8class_18ch.npz | windows=1039
+2026-07-08 09:30:38,280 | INFO | Loaded cache for subject 105 from D:\大文件夹\EEG-PLTA-main\data\pamap2_cache\pamap2_subject_105_len256_stride128_8class_18ch.npz | windows=989
+2026-07-08 09:30:38,328 | INFO | Loaded cache for subject 106 from D:\大文件夹\EEG-PLTA-main\data\pamap2_cache\pamap2_subject_106_len256_stride128_8class_18ch.npz | windows=1018
+2026-07-08 09:30:38,373 | INFO | Loaded cache for subject 108 from D:\大文件夹\EEG-PLTA-main\data\pamap2_cache\pamap2_subject_108_len256_stride128_8class_18ch.npz | windows=980
+2026-07-08 09:30:38,420 | INFO | Loaded cache for subject 107 from D:\大文件夹\EEG-PLTA-main\data\pamap2_cache\pamap2_subject_107_len256_stride128_8class_18ch.npz | windows=968
+2026-07-08 09:30:38,893 | INFO | Window shapes | train=(5659, 256, 18) valid=(1415, 256, 18) target=(968, 256, 18)
+2026-07-08 09:30:38,894 | INFO | Train class counts: {'lying': 976, 'sitting': 989, 'standing': 753, 'walking': 171, 'ascending_stairs': 549, 'descending_stairs': 503, 'vacuum_cleaning': 722, 'ironing': 996}
+2026-07-08 09:30:38,894 | INFO | Valid class counts: {'lying': 244, 'sitting': 248, 'standing': 188, 'walking': 43, 'ascending_stairs': 137, 'descending_stairs': 126, 'vacuum_cleaning': 180, 'ironing': 249}
+2026-07-08 09:30:38,894 | INFO | Target class counts: {'lying': 197, 'sitting': 87, 'standing': 176, 'walking': 13, 'ascending_stairs': 126, 'descending_stairs': 80, 'vacuum_cleaning': 130, 'ironing': 159}
+2026-07-08 09:30:41,029 | INFO | Epoch 001 | train_loss=1.1771 | valid_loss=0.5525 | valid_acc=84.24% | valid_f1=0.7419
+2026-07-08 09:30:42,665 | INFO | Epoch 002 | train_loss=0.4596 | valid_loss=0.3816 | valid_acc=89.68% | valid_f1=0.8835
+2026-07-08 09:30:44,285 | INFO | Epoch 003 | train_loss=0.3461 | valid_loss=0.3219 | valid_acc=91.80% | valid_f1=0.9163
+2026-07-08 09:30:45,900 | INFO | Epoch 004 | train_loss=0.2873 | valid_loss=0.3145 | valid_acc=91.73% | valid_f1=0.9128
+2026-07-08 09:30:47,502 | INFO | Epoch 005 | train_loss=0.2554 | valid_loss=0.2775 | valid_acc=92.51% | valid_f1=0.9218
+2026-07-08 09:30:49,122 | INFO | Epoch 006 | train_loss=0.2274 | valid_loss=0.2456 | valid_acc=93.22% | valid_f1=0.9300
+2026-07-08 09:30:50,750 | INFO | Epoch 007 | train_loss=0.2061 | valid_loss=0.2562 | valid_acc=93.00% | valid_f1=0.9251
+2026-07-08 09:30:52,347 | INFO | Epoch 008 | train_loss=0.1921 | valid_loss=0.2388 | valid_acc=92.93% | valid_f1=0.9247
+2026-07-08 09:30:53,959 | INFO | Epoch 009 | train_loss=0.1719 | valid_loss=0.2542 | valid_acc=93.22% | valid_f1=0.9316
+2026-07-08 09:30:55,572 | INFO | Epoch 010 | train_loss=0.1643 | valid_loss=0.2205 | valid_acc=93.85% | valid_f1=0.9372
+2026-07-08 09:30:57,186 | INFO | Epoch 011 | train_loss=0.1622 | valid_loss=0.2146 | valid_acc=93.50% | valid_f1=0.9318
+2026-07-08 09:30:58,787 | INFO | Epoch 012 | train_loss=0.1636 | valid_loss=0.1987 | valid_acc=94.42% | valid_f1=0.9418
+2026-07-08 09:31:00,402 | INFO | Epoch 013 | train_loss=0.1366 | valid_loss=0.1959 | valid_acc=94.20% | valid_f1=0.9381
+2026-07-08 09:31:02,018 | INFO | Epoch 014 | train_loss=0.1353 | valid_loss=0.1888 | valid_acc=94.63% | valid_f1=0.9389
+2026-07-08 09:31:03,629 | INFO | Epoch 015 | train_loss=0.1165 | valid_loss=0.1848 | valid_acc=93.99% | valid_f1=0.9360
+2026-07-08 09:31:05,235 | INFO | Epoch 016 | train_loss=0.1137 | valid_loss=0.1735 | valid_acc=94.49% | valid_f1=0.9379
+2026-07-08 09:31:06,847 | INFO | Epoch 017 | train_loss=0.1093 | valid_loss=0.1800 | valid_acc=94.70% | valid_f1=0.9442
+2026-07-08 09:31:08,474 | INFO | Epoch 018 | train_loss=0.1068 | valid_loss=0.1759 | valid_acc=94.70% | valid_f1=0.9457
+2026-07-08 09:31:10,079 | INFO | Epoch 019 | train_loss=0.1157 | valid_loss=0.1764 | valid_acc=94.70% | valid_f1=0.9405
+2026-07-08 09:31:11,679 | INFO | Epoch 020 | train_loss=0.0905 | valid_loss=0.1831 | valid_acc=94.42% | valid_f1=0.9397
+2026-07-08 09:31:13,279 | INFO | Epoch 021 | train_loss=0.0827 | valid_loss=0.1668 | valid_acc=95.34% | valid_f1=0.9505
+2026-07-08 09:31:14,890 | INFO | Epoch 022 | train_loss=0.0922 | valid_loss=0.1720 | valid_acc=94.84% | valid_f1=0.9404
+2026-07-08 09:31:16,496 | INFO | Epoch 023 | train_loss=0.0786 | valid_loss=0.1664 | valid_acc=94.84% | valid_f1=0.9381
+2026-07-08 09:31:18,100 | INFO | Epoch 024 | train_loss=0.0732 | valid_loss=0.1672 | valid_acc=95.19% | valid_f1=0.9445
+2026-07-08 09:31:19,707 | INFO | Epoch 025 | train_loss=0.0754 | valid_loss=0.1663 | valid_acc=94.70% | valid_f1=0.9404
+2026-07-08 09:31:21,317 | INFO | Epoch 026 | train_loss=0.0905 | valid_loss=0.2250 | valid_acc=94.20% | valid_f1=0.9316
+2026-07-08 09:31:22,919 | INFO | Epoch 027 | train_loss=0.0949 | valid_loss=0.1715 | valid_acc=94.91% | valid_f1=0.9445
+2026-07-08 09:31:24,525 | INFO | Epoch 028 | train_loss=0.0665 | valid_loss=0.1651 | valid_acc=95.69% | valid_f1=0.9536
+2026-07-08 09:31:26,138 | INFO | Epoch 029 | train_loss=0.0571 | valid_loss=0.1807 | valid_acc=94.91% | valid_f1=0.9463
+2026-07-08 09:31:27,758 | INFO | Epoch 030 | train_loss=0.0517 | valid_loss=0.1767 | valid_acc=95.62% | valid_f1=0.9546
+2026-07-08 09:31:29,362 | INFO | Epoch 031 | train_loss=0.0628 | valid_loss=0.2111 | valid_acc=94.56% | valid_f1=0.9431
+2026-07-08 09:31:30,965 | INFO | Epoch 032 | train_loss=0.0531 | valid_loss=0.1848 | valid_acc=94.98% | valid_f1=0.9421
+2026-07-08 09:31:32,576 | INFO | Epoch 033 | train_loss=0.0568 | valid_loss=0.1562 | valid_acc=95.41% | valid_f1=0.9465
+2026-07-08 09:31:34,190 | INFO | Epoch 034 | train_loss=0.0670 | valid_loss=0.1901 | valid_acc=94.77% | valid_f1=0.9450
+2026-07-08 09:31:35,804 | INFO | Epoch 035 | train_loss=0.0579 | valid_loss=0.1785 | valid_acc=95.05% | valid_f1=0.9461
+2026-07-08 09:31:37,404 | INFO | Epoch 036 | train_loss=0.0489 | valid_loss=0.2082 | valid_acc=94.49% | valid_f1=0.9365
+2026-07-08 09:31:39,005 | INFO | Epoch 037 | train_loss=0.0471 | valid_loss=0.1986 | valid_acc=94.56% | valid_f1=0.9395
+2026-07-08 09:31:40,622 | INFO | Epoch 038 | train_loss=0.0443 | valid_loss=0.1889 | valid_acc=94.56% | valid_f1=0.9365
+2026-07-08 09:31:42,227 | INFO | Epoch 039 | train_loss=0.0519 | valid_loss=0.1796 | valid_acc=95.48% | valid_f1=0.9513
+2026-07-08 09:31:43,838 | INFO | Epoch 040 | train_loss=0.0622 | valid_loss=0.2393 | valid_acc=94.20% | valid_f1=0.9367
+2026-07-08 09:31:45,439 | INFO | Epoch 041 | train_loss=0.0473 | valid_loss=0.1805 | valid_acc=94.98% | valid_f1=0.9445
+2026-07-08 09:31:47,060 | INFO | Epoch 042 | train_loss=0.0364 | valid_loss=0.1767 | valid_acc=95.69% | valid_f1=0.9536
+2026-07-08 09:31:48,666 | INFO | Epoch 043 | train_loss=0.0382 | valid_loss=0.1695 | valid_acc=95.19% | valid_f1=0.9454
+2026-07-08 09:31:50,284 | INFO | Epoch 044 | train_loss=0.0371 | valid_loss=0.2020 | valid_acc=95.05% | valid_f1=0.9482
+2026-07-08 09:31:51,890 | INFO | Epoch 045 | train_loss=0.0404 | valid_loss=0.1896 | valid_acc=95.69% | valid_f1=0.9519
+2026-07-08 09:31:53,519 | INFO | Epoch 046 | train_loss=0.0370 | valid_loss=0.1914 | valid_acc=95.41% | valid_f1=0.9497
+2026-07-08 09:31:55,115 | INFO | Epoch 047 | train_loss=0.0382 | valid_loss=0.1887 | valid_acc=95.41% | valid_f1=0.9491
+2026-07-08 09:31:56,710 | INFO | Epoch 048 | train_loss=0.0480 | valid_loss=0.1800 | valid_acc=95.48% | valid_f1=0.9516
+2026-07-08 09:31:58,312 | INFO | Epoch 049 | train_loss=0.0388 | valid_loss=0.2011 | valid_acc=95.48% | valid_f1=0.9528
+2026-07-08 09:31:59,927 | INFO | Epoch 050 | train_loss=0.0574 | valid_loss=0.1912 | valid_acc=95.62% | valid_f1=0.9576
+2026-07-08 09:32:01,532 | INFO | Epoch 051 | train_loss=0.0495 | valid_loss=0.2179 | valid_acc=95.34% | valid_f1=0.9472
+2026-07-08 09:32:03,132 | INFO | Epoch 052 | train_loss=0.0399 | valid_loss=0.1924 | valid_acc=95.34% | valid_f1=0.9485
+2026-07-08 09:32:04,751 | INFO | Epoch 053 | train_loss=0.0428 | valid_loss=0.1903 | valid_acc=95.05% | valid_f1=0.9476
+2026-07-08 09:32:04,752 | INFO | Early stopping triggered at epoch 53
+2026-07-08 09:32:04,752 | INFO | Training finished in 85.7s
+2026-07-08 09:32:04,752 | INFO | Best validation epoch=28 | valid_acc=95.69%
+2026-07-08 09:32:04,861 | INFO | Source-only target result | source_subjects=['101', '102', '103', '104', '105', '106', '108'] | target_subject=107 | acc=77.07% | f1=0.7492
+2026-07-08 09:32:04,873 | INFO | Saved training outputs under D:\大文件夹\EEG-PLTA-main\ckpt\PAMAP2_LOSO\mydfenet3\Seed5\multi_101102103104105106108_to_107\20260708-093038
